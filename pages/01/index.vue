@@ -38,7 +38,7 @@
 
     <p>cssは、まずは最低限ということで以下のように記述してみます。</p>
 
-<pre class="prettyprint lang-css linenums">
+<pre v-highlightjs>
 <code>* {
   margin: 0;
   padding: 0;
@@ -71,8 +71,9 @@
 
   <p>基準となる(=親要素)boxクラスに<span class="il">position: relative;</span>、子要素に<span class="il">position: absolute;</span>を指定します。</p>
   <p>そして、親要素を基準として、どれくらい子要素をずらすかを、top、bottom、left、rightプロパティで指定します。以下の例では<span class="il">top: 70%;</span>、<span class="il">left 10px;</span>を指定しています。</p> 
-<pre class="prettyprint lang-css linenums">
-<code>(略)
+
+<pre v-highlightjs>
+<code class="css">(略)
 
 .box {
   position: relative;
@@ -103,7 +104,7 @@
     <h2 class="section-title">hover擬似クラスを指定する</h2>
     <p>まず、ここまでのCSSの内容を整理しておきます。maskクラスに指定した<span class="il">left: 10px;</span>は、例として挙げただけなので不要です、消してください。</p>
 
-<pre class="prettyprint lang-css linenums">
+<pre v-highlightjs>
 <code>(略)
 
 .box {
@@ -125,8 +126,8 @@
 
   <p>今回はmaskクラスにカーソルを乗せた時の動作を記述するので、以下のようにhover擬似要素を指定します。</p>
       
-<pre class="prettyprint lang-css linenums">
-<code>(略)
+<pre v-highlightjs>
+<code class="css">(略)
 
 .mask {
   position: absolute;
@@ -148,7 +149,7 @@
 
   <p>続けて、親要素であるboxクラスからはみ出している部分を隠すために、<span class="il">overflow-y: hidden;</span>を適用します。</p>
 
-<pre class="prettyprint lang-css linenums">
+<pre v-highlightjs>
 <code>（略）
 
 .box {
@@ -177,7 +178,7 @@
       <h3 class="sub-title">`transition-duration`</h3>
       <p>`transition-duration`プロパティで、状態の変化にかかる時間を指定することができます。</p>
       <p>maskクラスに記述します。hover擬似要素ではありません。変化に0.5秒かけるとすると、以下のように記述します。</p>
-<pre class="prettyprint lang-css linenums">
+<pre v-highlightjs>
 <code>(略)
 
 .mask {
@@ -239,8 +240,7 @@ export default Vue.extend({
   width: 20vw;
   height: 20vw;
   border: 1px solid #aaa;
-  margin: 0 auto 5vh;
-
+  margin: 5vh auto 5vh;
   position: relative;
   overflow: hidden;
 }
@@ -274,4 +274,18 @@ export default Vue.extend({
   padding-top: 25%;
 } 
 
+@media screen and (max-width: 768px) {
+  .box {
+    width: 45vw;
+    height: 45vw;
+  } 
+
+  .box .mask .hoverme {
+    font-size: 2.4rem;
+  }
+
+  .box .mask .text {
+    font-size: 1.2rem;
+  }
+}
 </style>

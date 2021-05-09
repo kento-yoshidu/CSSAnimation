@@ -48,6 +48,7 @@ export default {
   @media screen and (max-width: 768px) {
     .header {
       height: 30vh;
+      margin-bottom: 0;
     }
     .header .header-title {
       margin-right: 6vw;
