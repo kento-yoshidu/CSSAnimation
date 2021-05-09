@@ -91,6 +91,7 @@ export default Vue.extend({
 }
 
 .boxes {
+  margin-bottom: 20px;
   width: 20vw;
   height: 20vw;
   border: 1.5px solid #ddd;
@@ -139,7 +140,6 @@ export default Vue.extend({
 .ani1 .mask .hoverme {
   color: #fff;
   font-size: 3rem;
-  line-height: 25%;
   font-weight: 500;
   line-height: 5vw;
 }
