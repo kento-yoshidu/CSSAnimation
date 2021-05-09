@@ -26,8 +26,8 @@
         <p>外枠としてboxクラス、浮かび上がってくる部分としてmaskクラスを用意します。</p>
         <p>maskクラスの中には適当な文字列を入れてあげてください。</p>
 
-<pre class="prettyprint linenums">
-<code>&lt;div class="box"&gt;
+<pre v-highlightjs>
+<code class="html">&lt;div class="box"&gt;
   ここがboxクラスです
   &lt;div class="mask"&gt;
     &lt;p class="slideUp"&gt;Slide Up&lt;/p&gt;
