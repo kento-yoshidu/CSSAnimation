@@ -1,16 +1,17 @@
 <template>
   <div class="container">
-    01
-
-    <p class="big">BIG!!!</p>
-    <a href="/01/">01</a>
+    <layout-header
+      :root="false"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import LayoutHeader from '~/components/LayoutHeader.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { LayoutHeader },})
 </script>
 
 <style scoped>
