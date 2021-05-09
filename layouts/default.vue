@@ -25,7 +25,13 @@ html {
 }
 
 .main {
-  width: 60vw;
+  width: 62vw;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 92%;
+  } 
 }
 </style>

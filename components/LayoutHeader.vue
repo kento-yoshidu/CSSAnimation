@@ -30,11 +30,12 @@ export default {
   }
 
   .header .header-title {
+    margin-right: 15vw;
+    margin-bottom: 30px;
     font-size: 5rem;
     color: #aaa;
     font-weight: 600;
     text-align: right;
-    margin-right: 15vw;
   }
 
   .header .link-btn {
@@ -42,5 +43,21 @@ export default {
     color: #aaa;
     font-size: 2.5rem;
     margin-left: 15vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 30vh;
+    }
+    .header .header-title {
+      margin-right: 6vw;
+      margin-bottom: 20px;
+      font-size: 2.8rem;
+    }
+
+    .header .link-btn {
+      font-size: 1.8rem;
+      margin-left: 8vw;
+    }
   }
 </style>

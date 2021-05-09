@@ -10,7 +10,6 @@
 
       <section class="section">
         <div class="wrapper">
-
           <a class="boxes ani1" href="/01/">
             <p>#1 Slide up</p>
             <div class="mask">
@@ -19,7 +18,19 @@
             </div>
           </a>
 
-          <a class="boxes ani2" href="./02/">
+          <a class="boxes ani2" href="/02/">
+            <p>#2 Beating heart</p>
+            <i class="fas fa-heart"></i>
+          </a>
+          <a class="boxes ani2" href="/02/">
+            <p>#2 Beating heart</p>
+            <i class="fas fa-heart"></i>
+          </a>
+          <a class="boxes ani2" href="/02/">
+            <p>#2 Beating heart</p>
+            <i class="fas fa-heart"></i>
+          </a>
+          <a class="boxes ani2" href="/02/">
             <p>#2 Beating heart</p>
             <i class="fas fa-heart"></i>
           </a>
@@ -75,6 +86,7 @@ export default Vue.extend({
   margin: 30px auto 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border: 1px solid #888;
 }
 
@@ -84,6 +96,14 @@ export default Vue.extend({
   border: 1.5px solid #ddd;
   border-radius: 2px;
   transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+  .boxes {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 10px;
+  }
 }
 
 .ani1 {
@@ -113,7 +133,7 @@ export default Vue.extend({
   color: #fff;
   letter-spacing: 3px;
   text-align: center;
-  transition: .5s;
+  transition: .3s;
 }
 
 .ani1 .mask .hoverme {
