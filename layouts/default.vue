@@ -41,6 +41,17 @@ html {
   } 
 }
 
+/*
+  シンタックスハイライト
+ */
 
+pre {
+}
+
+pre code {
+  padding: 20px 30px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
 
 </style>
