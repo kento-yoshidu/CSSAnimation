@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    CSS Animation & Tips
+    <layout-header />
 
     <a href="/01/">01</a>
   </div>
@@ -8,8 +8,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import LayoutHeader from '~/components/LayoutHeader.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { LayoutHeader },})
 </script>
 
 <style scoped>
