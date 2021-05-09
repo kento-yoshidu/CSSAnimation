@@ -25,8 +25,14 @@ html {
 }
 
 .main {
-  width: 62vw;
+  width: 61vw;
   margin: 0 auto;
+}
+
+.main p {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 768px) {
@@ -34,4 +40,7 @@ html {
     width: 92%;
   } 
 }
+
+
+
 </style>
