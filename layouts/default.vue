@@ -23,4 +23,9 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+.main {
+  width: 60vw;
+  margin: 0 auto;
+}
 </style>

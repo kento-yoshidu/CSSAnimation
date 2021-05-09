@@ -3,7 +3,11 @@
     <layout-header
       :root="false"
     />
+
+    <main class="main">
+    </main>
   </div>
+
 </template>
 
 <script lang="ts">
