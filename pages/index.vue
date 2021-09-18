@@ -4,8 +4,12 @@
 
     <main class="main">
       <section class="top-section" style="margin-top: 50px">
-        <p class="section-title">CSSで表現できるアニメーションです。何か思いついたら更新します。</p>
-        <p class="section-title">各ボックスをクリックすると詳細ページへ飛びます。</p>
+        <p class="section-title">
+          CSSで表現できるアニメーションです。何か思いついたら更新します。
+        </p>
+        <p class="section-title">
+          各ボックスをクリックすると詳細ページへ飛びます。
+        </p>
       </section>
 
       <section class="section">
@@ -17,26 +21,6 @@
               <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
             </div>
           </a>
-
-          <a class="boxes ani2" href="/02/">
-            <p>#2 Beating heart</p>
-            <i class="fas fa-heart"></i>
-          </a>
-          <a class="boxes ani2" href="/02/">
-            <p>#2 Beating heart</p>
-            <i class="fas fa-heart"></i>
-          </a>
-          <a class="boxes ani2" href="/02/">
-            <p>#2 Beating heart</p>
-            <i class="fas fa-heart"></i>
-          </a>
-          <a class="boxes ani2" href="/02/">
-            <p>#2 Beating heart</p>
-            <i class="fas fa-heart"></i>
-          </a>
-          
-          <div class="boxes">
-          </div>
         </div>
       </section>
     </main>
@@ -47,8 +31,7 @@
 import Vue from 'vue'
 import LayoutHeader from '~/components/LayoutHeader.vue'
 
-export default Vue.extend({
-  components: { LayoutHeader },})
+export default Vue.extend({ components: { LayoutHeader } })
 </script>
 
 <style scoped>
