@@ -232,7 +232,7 @@ import Vue from 'vue'
 import LayoutHeader from '~/components/LayoutHeader.vue'
 
 export default Vue.extend({
-  components: { LayoutHeader },})
+  components: { LayoutHeader } })
 </script>
 
 <style scoped>
@@ -272,13 +272,13 @@ export default Vue.extend({
   color: #fff;
   font-size: 2rem;
   padding-top: 25%;
-} 
+}
 
 @media screen and (max-width: 768px) {
   .box {
     width: 45vw;
     height: 45vw;
-  } 
+  }
 
   .box .mask .hoverme {
     font-size: 2.4rem;
