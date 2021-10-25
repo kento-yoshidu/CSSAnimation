@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-mdx`,
     {
@@ -15,5 +14,6 @@ module.exports = {
         name: `posts`
       }
     },
+    `gatsby-plugin-sass`,
   ],
 }
