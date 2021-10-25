@@ -5,9 +5,7 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -16,5 +14,6 @@ module.exports = {
         name: `posts`
       }
     },
+    `gatsby-plugin-sass`,
   ],
 }
