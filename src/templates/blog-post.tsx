@@ -1,14 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
+
+import Layout from "../components/layout"
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 
-const Blog = ({ data }) => (
-  <>
-    <h1>{data.mdx.frontmatter.title}</h1>
-    <p>hogehoge</p>
-    <hr/>
+interface Props {
+  data?: string
+  location: string
+}
+const Blog = ({ data, location }) => (
+  <Layout
+    location={location}
+  >
     <MDXRenderer frontmatter={data.mdx.frontmatter}>{data.mdx.body}</MDXRenderer>
-  </>
+  </Layout>
 )
 export default Blog
 

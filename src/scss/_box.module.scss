@@ -1,0 +1,13 @@
+.boxWrapper {
+  border: 1px solid #eee;
+  margin: 0 auto;
+  width: 18vw;
+  height: 18vw;
+}
+
+@media screen and (max-width: 768px) {
+  .boxWrapper {
+    width: 50vw;
+    height: 50vw;
+  } 
+}
