@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
   plugins: [
     {
@@ -17,15 +11,6 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          /*
-          {
-            resolve: "gatsby-remark-external-links",
-            options: {
-              target: "_blank",
-              rel: "nofollow"
-            }
-          },
-          */
           {
           resolve: "gatsby-remark-prismjs",
             options: {
