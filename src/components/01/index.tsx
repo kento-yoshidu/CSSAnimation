@@ -3,7 +3,11 @@ import React from "react"
 const Styles = require("./styles.module.scss")
 
 const Component01 = () => (
-  <h1 className={Styles.title}>This is 01 Component</h1>
+  <div className={Styles.box}>
+    <div className={Styles.mask}>
+      <p className={Styles.title}>#01</p>
+    </div>
+  </div>
 )
 
 export default Component01
