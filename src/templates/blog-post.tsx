@@ -4,9 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-
-const Styles = require("../styles/_blogTemplate.module.scss")
-
 import 'prismjs/themes/prism-twilight.css'
 interface Props {
   data?: string
