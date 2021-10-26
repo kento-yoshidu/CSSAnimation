@@ -22,7 +22,7 @@ const Header: React.VFC<Props> = ({ location }) => {
             to="/"
             className={Styles.link}
           >
-            HOME
+            to HOME
           </Link>
         )
       }
