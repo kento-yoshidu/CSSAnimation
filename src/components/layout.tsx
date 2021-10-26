@@ -1,7 +1,14 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
-const Layout = ({ children }) => (
+import Header from "./header"
+
+interface Props {
+  children: ReactNode
+}
+
+const Layout: React.VFC<Props> = ({ children }) => (
   <>
+    <Header />
     {children}
   </>
 )
