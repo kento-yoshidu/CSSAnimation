@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  height: 30vh;
+  margin-bottom: 5vh;
+
+  .headerTitle {
+    margin-right: 15vw;
+    margin-bottom: 30px;
+    font-size: 6rem;
+    color: #aaa;
+    font-weight: 500;
+    text-align: right;
+  }
+}

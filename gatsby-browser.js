@@ -1,1 +1,1 @@
-import "./src/scss/_destyle.scss"
+import "./src/scss/global.scss";
