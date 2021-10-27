@@ -1,12 +1,8 @@
 .header {
-  /*
-  display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  */
-  height: 30vh;
+  height: 25vh;
   margin-bottom: 5vh;
   color: #aaa;
+  border-bottom: 1px solid #eee;
 
   .headerTitle {
     margin-top: 10vh;
@@ -19,16 +15,16 @@
   .link {
     margin-left: 10vw;;
     color: #aaa;
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-decoration: underline;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    height: 40vh;
+    height: 20vh;
     margin-bottom: 3vh;
     border-bottom: 1px solid #ccc;
     .headerTitle {
@@ -36,7 +32,7 @@
       font-size: 2.5rem;
     }
     .link {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   } 
 }
