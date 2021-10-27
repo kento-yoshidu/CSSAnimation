@@ -6,7 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import 'prismjs/themes/prism-twilight.css'
 interface Props {
-  data?: string
+  data: any
   location: string
 }
 const Blog: React.VFC<Props> = ({ data, location }) => (

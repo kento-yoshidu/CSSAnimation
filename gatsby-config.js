@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-typescript`,
+    //`gatsby-plugin-typegen`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -29,6 +31,8 @@ module.exports = {
         name: `posts`
       }
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
   ],
 }
