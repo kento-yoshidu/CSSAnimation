@@ -25,7 +25,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMdx.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.map(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
