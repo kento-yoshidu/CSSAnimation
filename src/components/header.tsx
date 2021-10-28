@@ -9,25 +9,21 @@ interface Props {
   }
 }
 
-const Header: React.VFC<Props> = ({ location }) => {
-  console.log(location.pathname)
+const Header: React.VFC<Props> = ({ location }) => (
+  <header className={Styles.header}>
+    <h1 className={Styles.headerTitle}>CSS Animation & Tips</h1>
 
-  return (
-    <header className={Styles.header}>
-      <h1 className={Styles.headerTitle}>CSS Animation & Tips</h1>
-
-      {
-        location.pathname !== "/" &&  (
-          <Link
-            to="/"
-            className={Styles.link}
-          >
-            to HOME
-          </Link>
-        )
-      }
-    </header>
-  )
-}
+    {
+      location.pathname !== "/" &&  (
+        <Link
+          to="/"
+          className={Styles.link}
+        >
+          to HOME
+        </Link>
+      )
+    }
+  </header>
+)
 
 export default Header
