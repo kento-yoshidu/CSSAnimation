@@ -7,10 +7,16 @@ import Component01 from "../components/01/index"
 
 const Styles = require("../styles/_index.module.scss")
 
-const Home = ({ location }) => {
+interface Props {
+  location: {
+    pathname: string
+  }
+} 
+
+const Home: React.VFC<Props> = ({ location }) => {
   return (
     <Layout
-      location={location}
+      location={location.pathname}
     >
       <div className={Styles.wrapper}>
         <Link
