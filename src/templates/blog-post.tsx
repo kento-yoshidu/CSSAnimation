@@ -14,6 +14,7 @@ interface Props {
 const Blog: React.VFC<Props> = ({ data, location }) => (
   <Layout
     location={location}
+    pageTitle={data.mdx.frontmatter.title}
   >
     <MDXRenderer
       frontmatter={data?.mdx?.frontmatter}

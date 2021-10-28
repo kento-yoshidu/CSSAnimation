@@ -45,8 +45,24 @@ const plugins: GatsbyConfig['plugins'] = [
   `gatsby-plugin-sass`,
 ]
 
+const siteMetadata: GatsbyConfig['siteMetadata'] = {
+  title: `CSS Animation & Tips`,
+  description: `CSSだけでできる色々なことの解説`,
+  lang: `ja`,
+  siteUrl: `https://cssanimation-and-tips.netlify.app`,
+  locale: `ja_JP`,
+  author: {
+    name: `Kento Yoshizu`,
+  },
+  //description: `A starter blog demonstrating what Gatsby can do.`,
+  social: {
+    //twitter: `kylemathews`,
+  },
+}
+
 const config: GatsbyConfig = {
-  plugins
+  plugins,
+  siteMetadata
 }
 
 export default config
