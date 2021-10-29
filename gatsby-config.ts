@@ -11,7 +11,7 @@ const plugins: GatsbyConfig['plugins'] = [
         {
           resolve: `gatsby-remark-images`,
           options: {
-            maxWidth: 1200,
+            maxWidth: 590,
             linkImagesToOriginal: false,
           },
         },
@@ -40,7 +40,7 @@ const plugins: GatsbyConfig['plugins'] = [
       name: `components`
     }
   },
-  `gatsby-transformer-remark`,
+  //`gatsby-transformer-remark`,
   `gatsby-plugin-sharp`,
   `gatsby-plugin-sass`,
 ]

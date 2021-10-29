@@ -466,6 +466,45 @@ main {
     font-size: 2rem;
     text-indent: 0.8rem;
   }
+  .gatsby-resp-image-wrapper {
+    margin-left: 1rem !important;
+    margin-bottom: 50px;
+    max-width: 90%;
+    img {
+      height: auto;
+      box-shadow: 0 0 5px 5px #eee !important;
+    }
+  }
+    blockquote {
+    position: relative;
+    width: 80%;
+    padding: 18px 30px 18px 60px;
+    margin-top: 12px;
+    margin-left: 1rem;
+    margin-bottom: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+    box-shadow: 0 0 1.5px 1.5px #ddd;
+    color: #666;
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-40%);
+      content: "❝";
+      font-size: 6rem;
+      color: #999;
+      margin-left: -50px;
+    }
+  }
+  .language-text {
+    color: #444 !important;
+    background: #ddd !important;
+  }
 }
 
 @media screen and (max-width: 768px) {

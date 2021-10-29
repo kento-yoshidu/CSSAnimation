@@ -5,7 +5,9 @@ import Header from "./header"
 
 interface Props {
   children: ReactNode,
-  location: string,
+  location: {
+    pathname: string
+  }
   pageTitle?: string
 }
 
