@@ -8,6 +8,7 @@ const Footer = () => (
     <h1>CSS Animation & Tips</h1>
 
     <Link to="/">Home</Link>
+    <Link to="https://">Home</Link>
   </footer>
 )
 

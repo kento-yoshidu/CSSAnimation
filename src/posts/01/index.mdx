@@ -1,9 +1,12 @@
 ---
-title: "#01 slide Up"
+title: "#01 slide up box"
 slug: "01"
+date: "2021-10-29"
+update: "2021-10-29"
 ---
 
 import Component from "../../components/01/index"
+import PageInfo from "../../components/pageInfo"
 import * as Styles from "../../scss/_box.module.scss"
 
 <div className={Styles.boxWrapper}>
@@ -12,9 +15,14 @@ import * as Styles from "../../scss/_box.module.scss"
 
 </div>
 
+<PageInfo
+	date={props.frontmatter.date}
+	update={props.frontmatter.update}
+/>
+
 <main>
 
-# #01 スライドアップするボックス
+<h1>{props.frontmatter.title}</h1>
 
 こんにちは。
 
