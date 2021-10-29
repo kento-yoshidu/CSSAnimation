@@ -38,4 +38,4 @@ const createPages: GatsbyNode['createPages'] = async ({ actions, graphql, report
   })
 }
 
-export default createPages
+export { createPages }
