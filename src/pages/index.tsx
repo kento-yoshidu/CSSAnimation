@@ -16,12 +16,12 @@ interface Props {
 const Home: React.VFC<Props> = ({ location }) => {
   return (
     <Layout
-      location={location.pathname}
+      location={location}
     >
       <div className={Styles.wrapper}>
         <Link
           className={Styles.box}
-          to="animation01"
+          to="01"
         >
           <Component01 />
         </Link>

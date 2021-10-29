@@ -11,7 +11,7 @@ const plugins: GatsbyConfig['plugins'] = [
         {
           resolve: `gatsby-remark-images`,
           options: {
-            maxWidth: 1200,
+            maxWidth: 590,
             linkImagesToOriginal: false,
           },
         },
@@ -40,13 +40,29 @@ const plugins: GatsbyConfig['plugins'] = [
       name: `components`
     }
   },
-  `gatsby-transformer-remark`,
+  //`gatsby-transformer-remark`,
   `gatsby-plugin-sharp`,
   `gatsby-plugin-sass`,
 ]
 
+const siteMetadata: GatsbyConfig['siteMetadata'] = {
+  title: `CSS Animation & Tips`,
+  description: `CSSだけでできる色々なことの解説`,
+  lang: `ja`,
+  siteUrl: `https://cssanimation-and-tips.netlify.app`,
+  locale: `ja_JP`,
+  author: {
+    name: `Kento Yoshizu`,
+  },
+  //description: `A starter blog demonstrating what Gatsby can do.`,
+  social: {
+    //twitter: `kylemathews`,
+  },
+}
+
 const config: GatsbyConfig = {
-  plugins
+  plugins,
+  siteMetadata
 }
 
 export default config
