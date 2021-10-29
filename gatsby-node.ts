@@ -1,6 +1,8 @@
+import type { GatsbyNode } from "gatsby"
+
 const path = require("path")
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
+const createPages: GatsbyNode['createPages'] = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.tsx`)
@@ -35,3 +37,5 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+export default createPages
