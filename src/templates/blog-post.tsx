@@ -16,6 +16,7 @@ const Blog: React.VFC<Props> = ({ data, location }) => (
     location={location}
     pageTitle={data.mdx.frontmatter.title}
   >
+    
     <MDXRenderer
       frontmatter={data?.mdx?.frontmatter}
     >
@@ -32,6 +33,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         slug
+        date
+        update
       }
     }
   }
