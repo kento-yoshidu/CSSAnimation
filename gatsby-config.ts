@@ -43,6 +43,19 @@ const plugins: GatsbyConfig['plugins'] = [
   //`gatsby-transformer-remark`,
   `gatsby-plugin-sharp`,
   `gatsby-plugin-sass`,
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `CSS Animation & Tips`,
+      short_name: `CSS Animation & Tips`,
+      start_url: `/`,
+      background_color: `#ffffff`,
+      theme_color: `#666`,
+      display: `minimal-ui`,
+      icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+    },
+  },
+  `gatsby-plugin-offline`,　
 ]
 
 const siteMetadata: GatsbyConfig['siteMetadata'] = {
