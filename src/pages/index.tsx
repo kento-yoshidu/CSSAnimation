@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-import Component01 from "../components/01/index"
-import Component02 from "../components/02/index"
+import Component01 from "../posts/01/index"
+import Component02 from "../posts/02/index"
 
 const Styles = require("../styles/_index.module.scss")
 

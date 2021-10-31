@@ -5,121 +5,22 @@ date: "2021-11-01"
 update: "2021-11-01"
 ---
 
-import Component02 from "../../components/02/index"
+import Component02 from "./index"
+import PageInfo from "../../components/pageInfo"
 import * as Styles from "../../scss/_box.module.scss"
 
 <div className={Styles.boxWrapper}>
 <Component02 />
 </div>
 
-# hoge
+<PageInfo
+	date={props.frontmatter.date}
+	update={props.frontmatter.update}
+/>
 
-## こんにちは02
+<main>
 
-* <div>1+1={1+1}</div>
-* <div>slug: {props.frontmatter.slug}</div>
-* <div>title: {props.frontmatter.title}</div>
+<h1>{props.frontmatter.title}</h1>
 
-テストだよ
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+</main>
