@@ -4,8 +4,8 @@ const Styles = require("./styles.module.scss")
 
 const Component02 = () => (
   <div className={Styles.box}>
-    <p>#02</p>
-    <p>underline</p>
+    <a className={Styles.text}>#02</a>
+    <a className={Styles.text}>underline</a>
   </div>
 )
 
