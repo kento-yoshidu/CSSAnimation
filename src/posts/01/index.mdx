@@ -6,6 +6,7 @@ update: "2021-10-29"
 ---
 
 import Component01 from "./index"
+import Component01a from "./component01a"
 import PageInfo from "../../components/pageInfo"
 import * as Styles from "../../scss/_box.module.scss"
 
@@ -145,7 +146,11 @@ CSSを適用させると以下のように表示されるはずです。
 
 これで`mask`にカーソルを乗せた時、`top: 0`の位置まで移動するようにできました。
 
-![](./images/animation01.gif)
+<div className={Styles.boxWrapper} style={{marginBottom: "220px"}}>
+
+<Component01a />
+
+</div>
 
 続けて、`box`からはみ出している部分を隠すために、`overflow-y: hidden`を適用します。
 
