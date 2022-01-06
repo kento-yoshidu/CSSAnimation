@@ -10,11 +10,7 @@ import Component01a from "./component01a"
 import PageInfo from "../../components/pageInfo"
 import * as Styles from "../../scss/_box.module.scss"
 
-<div className={Styles.boxWrapper}>
-
 <Component01 />
-
-</div>
 
 <PageInfo
 	date={props.frontmatter.date}
@@ -146,11 +142,7 @@ CSSを適用させると以下のように表示されるはずです。
 
 これで`mask`にカーソルを乗せた時、`top: 0`の位置まで移動するようにできました。
 
-<div className={Styles.boxWrapper} style={{marginBottom: "220px"}}>
-
 <Component01a />
-
-</div>
 
 続けて、`box`からはみ出している部分を隠すために、`overflow-y: hidden`を適用します。
 
