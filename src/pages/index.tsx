@@ -27,12 +27,14 @@ const Home: React.VFC<Props> = ({ location }) => {
           <Component01 />
         </Link>
 
+        {/*
         <Link
           className={Styles.box}
           to="02"
         >
           <Component02 />
         </Link>
+  */}
       </div>
     </Layout>
   )
