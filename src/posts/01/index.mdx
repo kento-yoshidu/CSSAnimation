@@ -5,8 +5,13 @@ date: "2021-10-29"
 update: "2021-10-29"
 ---
 
-import Component01 from "./index"
-import Component01a from "./component01a"
+import {
+  Component01,
+  Component01A,
+  Component01B,
+  Component01C
+} from "./component01"
+
 import PageInfo from "../../components/pageInfo"
 import * as Styles from "../../scss/_box.module.scss"
 
@@ -31,14 +36,14 @@ import * as Styles from "../../scss/_box.module.scss"
 
 外枠として`box`クラス、浮かび上がってくる部分として`mask`クラスを`div`タグで用意します。
 
-`mask`の中には`p`タグなどを使い、適当な文字列を入れてください。
+`mask`の中には`p`要素などを使い、適当な文字列を入れてください。
 
 ```html
 <div class="box">
 	<p>#01</p>
 
 	<div class="mask">
-		<p class="slideUp">Slide Up</p>
+		<p>Slide Up</pclass=>
 	</div>
 </div>
 ```
@@ -47,25 +52,26 @@ cssはまずは以下のように記述してみます。
 
 ```css
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizeing: border-box;
 }
 
 body {
-	padding: 30px;
+  padding: 30px;
 }
 
 .box {
-	height: 20vw;
-	width: 20vw;
-	border: 1px solid #aaa;
+  height: 20vw;
+  width: 20vw;
+  border: 1px solid #aaa;
 }
 
 .mask {
-	width: 100%;
-	height: 100%;
-	background-color: #445;
-	color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #445;
+  color: #fff;
 }
 ```
 
@@ -117,7 +123,7 @@ CSSを適用させると以下のように表示されるはずです。
 
 ![](./images/image04.png)
 
-そしてこれを、「`hover`した時に`top: 0`にする」CSSを書いていきます。
+そしてこれを、「hoverした時に`top: 0`にする」CSSを書いていきます。
 
 ## hover擬似クラスを指定する
 
@@ -142,7 +148,7 @@ CSSを適用させると以下のように表示されるはずです。
 
 これで`mask`にカーソルを乗せた時、`top: 0`の位置まで移動するようにできました。
 
-<Component01a />
+<Component01A />
 
 続けて、`box`からはみ出している部分を隠すために、`overflow-y: hidden`を適用します。
 
@@ -160,15 +166,17 @@ CSSを適用させると以下のように表示されるはずです。
 /* (略) */
 ```
 
+<Component01B />
+
 これでホバーした時に`mask`をスライドアップさせるという基本機能は実装できましたね。あとはアニメーションを付けて、滑らかにスライドさせるようにすれば完成です。
 
 ## CSSトランジションでアニメーションを適用する
 
 CSSトランジションとは何なのでしょうか？ [MDNによると](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions) 、
 
->「CSS トランジションは、 CSS プロパティが変化する際のアニメーションの速度を操作する手段を提供します。プロパティの変更を直ちに有効にするのではなく、プロパティの変更を一定期間にわたって発生させることを可能にします。」
+>「CSS トランジションは、 CSS プロパティが変化する際の<mark>アニメーションの速度を操作する</mark>手段を提供します。プロパティの変更を直ちに有効にするのではなく、プロパティの変更を一定期間にわたって発生させることを可能にします。」
 
-とのことです。もうちょっとかみ砕いて言うと、状態の変化をアニメーションとして表現することができる機能であるということです。今回で言う「状態の変化」とは、`top: 70%`から`top: 0`への変化ですね。
+とのことです。もうちょっとかみ砕いて言うと、状態の変化をアニメーションとして表現することができる機能であるということです。今回で言う「状態の変化」とは、`top: 70%`から`top: 0`への変化です。
 
 CSSトランジションは、その名の通り**transitionプロパティ**を使用して適用します。
 
@@ -195,6 +203,8 @@ CSSトランジションは、その名の通り**transitionプロパティ**を
   top: 0;
 }
 ```
+
+<Component01C />
 
 ## positionプロパティって何なの?
 
@@ -223,6 +233,5 @@ positionを指定しない場合(つまり、通常の状態ですね)は以下�
 <img src="~/assets/img/01/06.JPG" class="img" />
 
 この通り、「もともとmaskクラスがあった位置を基準」に配置することになります。
-
 
 </main>
