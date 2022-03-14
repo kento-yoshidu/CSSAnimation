@@ -1,13 +1,13 @@
-.boxWrapper {
+.box-wrapper {
   border: 1px solid #eee;
   margin: 0 auto;
   width: 18vw;
   height: 18vw;
 }
 
-@media screen and (max-width: 768px) {
-  .boxWrapper {
+@media (max-width: 768px) {
+  .box-wrapper {
     width: 45vw;
     height: 45vw;
-  } 
+  }
 }

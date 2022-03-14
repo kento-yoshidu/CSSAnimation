@@ -5,10 +5,9 @@
   margin-bottom: 5vh;
   color: #aaa;
   border-bottom: 1px solid #eee;
-
 }
 
-.headerTitle {
+.header-title {
   margin-top: 10vh;
   margin-right: 15vw;
   margin-bottom: 30px;
@@ -26,9 +25,9 @@
   transition: 0.3s;
 
   &:hover {
-    background: -webkit-linear-gradient(0deg, $main-color2, $main-color);//背景色にグラデーションを指定
-    -webkit-background-clip: text;//テキストでくり抜く
-    -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+    background: linear-gradient(0deg, $main-color2, $main-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -37,11 +36,9 @@
     height: 15vh;
     margin-bottom: 4vh;
     border-bottom: 1px solid #ccc;
-  } 
+  }
 
-  .headerTitle {
-    margin-top: 4vh;
-    margin-bottom: 20px;
+  .header-title {
     margin: 4vh auto 20px;
     font-size: 2.5rem;
     text-align: center;

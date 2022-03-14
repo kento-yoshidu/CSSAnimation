@@ -18,7 +18,7 @@ export const Component01A = () => (
   <div className={`${Styles.boxWrapper} ${Styles.boxWrapperA}`}>
     <div className={`${Styles.box} ${Styles.boxA}`}>
       <p>#01</p>
-      <div className={Styles.boxAmask}>
+      <div className={Styles.boxAMask}>
         <p>slide up</p>
       </div>
     </div>
@@ -29,7 +29,7 @@ export const Component01B = () => (
   <div className={Styles.boxWrapperB}>
     <div className={`${Styles.box} ${Styles.boxB}`}>
       <p>#01</p>
-      <div className={Styles.boxBmask}>
+      <div className={Styles.boxBMask}>
         <p>slide up</p>
       </div>
     </div>
@@ -40,7 +40,7 @@ export const Component01C = () => (
   <div className={Styles.boxWrapperC}>
     <div className={Styles.boxC}>
       <p>#01</p>
-      <div className={Styles.boxCmask}>
+      <div className={Styles.boxCMask}>
         <p>slide up</p>
       </div>
     </div>

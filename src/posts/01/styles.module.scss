@@ -1,18 +1,18 @@
-.baseBoxWrapper {
+.base-box-wrapper {
   border: 2px solid #aaa;
 }
 
-.baseBox {
+.base-box {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.baseMask {
+.base-mask {
   background-color: #445;
 }
 
-.boxWrapper {
+.box-wrapper {
   margin: 0 auto;
   width: 20vw;
   height: 20vw;
@@ -61,7 +61,7 @@
       font-size: 2rem;
       height: auto;
       line-height: 1.5;
-      display: -webkit-box;
+      display: box;
       overflow: hidden;
       -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;
@@ -70,16 +70,16 @@
 }
 
 @media (max-width: 768px) {
-  .boxWrapper {
+  .box-wrapper {
     width: 40vw;
     height: 40vw;
-  } 
+  }
 
   .box {
     > p {
       font-size: 3rem;
     }
-  } 
+  }
 
   .mask {
     transform: translateY(-40px);
@@ -96,14 +96,14 @@
   }
 }
 
-.boxWrapperA {
+.box-wrapper-a {
   border: 1px solid #ccc;
   width: 15vw;
   height: 15vw;
   margin: 50px 0 200px;
 }
 
-.boxA {
+.box-a {
   position: relative;
   height: 100%;
   margin-bottom: 100px;
@@ -111,7 +111,7 @@
   overflow-y: initial;
 }
 
-.boxAmask {
+.box-a-mask {
   position: absolute;
   top: 70%;
   background-color: #445;
@@ -128,7 +128,7 @@
 }
 
 @media (max-width: 768px) {
-  .boxWrapperA {
+  .box-wrapper-a {
     width: 40vw;
     height: 40vw;
   }
@@ -138,14 +138,14 @@
 *************** BoxB
 ****************************************/
 
-.boxWrapperB {
+.box-wrapper-b {
   border: 1px solid #ccc;
   width: 15vw;
   height: 15vw;
   margin: 50px 0;
 }
 
-.boxBmask {
+.box-b-mask {
   position: absolute;
   top: 70%;
   background-color: #445;
@@ -162,7 +162,7 @@
 }
 
 @media (max-width: 768px) {
-  .boxWrapperB {
+  .box-wrapper-b {
     width: 50vw;
     height: 50vw;
   }
@@ -172,14 +172,14 @@
 *************** BoxC
 ****************************************/
 
-.boxWrapperC {
+.box-wrapper-c {
   border: 1px solid #ccc;
   width: 15vw;
   height: 15vw;
   margin: 50px 0;
 }
 
-.boxC {
+.box-c {
   position: relative;
   height: 100%;
   margin-bottom: 100px;
@@ -187,7 +187,7 @@
   overflow-y: hidden;
 }
 
-.boxCmask {
+.box-c-mask {
   position: absolute;
   top: 70%;
   background-color: #445;
@@ -205,7 +205,7 @@
 }
 
 @media (max-width: 768px) {
-  .boxWrapperC {
+  .box-wrapper-c {
     width: 50vw;
     height: 50vw;
   }
