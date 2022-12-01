@@ -1,0 +1,23 @@
+# gatsby-plugin-dts-css-modulesがNodeの14以上を要求するのでバージョン指定
+
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 18.0.0
+        - nvm use 18.0.0
+        - curl -o- -L https://yarnpkg.com/install.sh | bash
+        - npm global i @quasar/cli
+        - npm install
+    build:
+      commands:
+        - node -v
+        - npm run build
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
