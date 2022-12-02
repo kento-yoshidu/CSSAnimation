@@ -5,11 +5,6 @@ import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client
 import { copyFileSync } from "fs";
 
 const IndexPage: React.FC<PageProps> = ({ serverData }) => {
-
-  return (
-    <h1>{serverData.data}</h1>
-  )
-  /*
   const data = serverData.data.user.contributionsCollection.contributionCalendar
 
   return (
@@ -29,7 +24,6 @@ const IndexPage: React.FC<PageProps> = ({ serverData }) => {
       })}
     </>
   )
-  */
 }
 
 export default IndexPage
@@ -37,7 +31,6 @@ export default IndexPage
 export const Head: HeadFC = () => <title>Home Page</title>
 
 export async function getServerData() {
-  /*
   const token = process.env.GITHUB_API
 
   const client = new ApolloClient({
@@ -65,9 +58,4 @@ export async function getServerData() {
         }
       `,
     })
-  */
-
-  return {
-    props: { data: "Hello" }
-  }
 }
